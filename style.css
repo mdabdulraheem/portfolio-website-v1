@@ -2,135 +2,136 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body {
     background: #efefef;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr;
-    height: 100%;
-    margin: 0 auto;
+    grid-template-areas: "header content"
+                        "header footer";
+    text-align: center;
 }
 
-.div1, .div2, .div3 {
+.div1,.div2,.div3  {
     padding: 1em;
 }
 
 .div1 {
-    grid-row: 1/3;
-    text-align: center;
-    background: linear-gradient(to right,rgb(169, 109, 197),rgb(167, 25, 37),rgb(255, 0, 34));
+    grid-area: header;
+    background: linear-gradient(to right,orange,rgb(231, 151, 2),rgb(190, 125, 3));
 }
 
 .div1 ul {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .div1 ul li {
     list-style: none;
-    padding: 1em 0;
+    padding: 1em;
 }
 
-.div1 ul li a {
-    color: white;
+.div1 a {
     text-decoration: none;
+    color: white;
     opacity: 0.6;
     transition: 0.3s;
+    text-transform: uppercase;
 }
 
-.div1 ul li a:hover {
+.div1 a:hover {
     opacity: 1;
 }
 
 .div2 {
-    text-align: center;
-    color: grey;
-    max-width: 960px;    
+    grid-area: content;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    max-width: 1024px;
 }
 
 .div2 img {
-    width: 200px;
     border-radius: 50%;
+    max-width: 100%;
+    box-shadow: 1px 1px 10px black;
 }
 
-.pic {
-    margin: 1em 0;
-}
-
-.intro {
-    margin: 1em 0;
-}
-
-.intro h1 {
+.div2 h1 {
+    margin-bottom: 1rem;
     font-size: 2rem;
 }
 
-.intro p {
-    font-size: 1.2rem;
-    margin-top: 1rem;
-}
-
-.btn {
+.div2 .btn {
+    display: inline-block;
     text-decoration: none;
     color: white;
-    background: linear-gradient(to right,rgb(169, 109, 197),rgb(167, 25, 37),rgb(255, 0, 34));
-    padding: 0.5rem 2em;
-    border-radius: 2rem;
-    display: inline-block;
-    margin: 1em 0;
+    background: linear-gradient(to right,orange,rgb(231, 151, 2),rgb(190, 125, 3));
+    box-shadow: 2px 2px 10px grey ;
+    padding: 0.8rem 1.3rem;
+    border-radius: 50px;
+    margin-top: 1em;
 }
 
 .div3 {
+    grid-area: footer;
     background: white;
+    height: 100px;
 }
 
 .div3 ul {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
 }
 
-.div3 ul li {
+.div3 li {
     list-style: none;
 }
 
-.div3 ul li img {
-    width: 40px;
+.div3 img {
+    height: 50px;
 }
 
-
-@media screen and (max-width: 540px) {
-
-    .container {
+@media screen and (min-width: 961px) {
+    .div2 {
+        height: 90vh;
     }
+}
 
-    .div1 {
-        grid-column: 1/3;
-        grid-row: 1/2;
+@media screen and (max-width: 960px) {
+    .container {
+        grid-template-areas:
+        'header'
+        'content'
+        'footer';
     }
 
     .div1 ul {
-        display: flex;
-        justify-content: space-evenly;
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    .div1 a {
+        font-size: 1.2rem;
     }
 
     .div2 {
-        grid-column: 1/3;
-        grid-row: 2/3;
+        grid-template-columns: 1fr;
     }
+}
 
-    .div3 {
-        grid-column: 1/3;
-        grid-row: 3/4;
+@media screen and (max-width: 500px) {
+    .div1 a {
+        font-size: 1rem;
     }
 }
 
 @media screen and (max-width: 360px) {
-    .div1 {
+    .div1 a {
+        font-size: 0.8rem;
     }
-
 }
