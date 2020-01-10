@@ -613,6 +613,7 @@ textarea {
     opacity: 0.8;
     border: none;
     border-radius: 20px;
+    box-shadow: 0 1px 20px rgba(255,255,255,.7);
 }
 
 #submit:hover {
