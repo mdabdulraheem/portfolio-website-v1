@@ -523,6 +523,10 @@ body {
     background-image: url("../images/img_bg_main.jpg");
     background: linear-gradient(to right, #2d5dd4e7, #4f636be7);
     background-image: linear-gradient(to right, #2d5dd4e7, #4f636be7) ,url("../images/img_bg_main.jpg");
+    -o-background-image: linear-gradient(to right, #2d5dd4e7, #4f636be7) ,url("../images/img_bg_main.jpg");
+    -ms-background-image: linear-gradient(to right, #2d5dd4e7, #4f636be7) ,url("../images/img_bg_main.jpg");
+    -moz-background-image: linear-gradient(to right, #2d5dd4e7, #4f636be7) ,url("../images/img_bg_main.jpg");
+    -webkit-background-image: linear-gradient(to right, #2d5dd4e7, #4f636be7) ,url("../images/img_bg_main.jpg");
     background-size: cover;
     background-position: 50%;
     padding: 3rem 0 0.5rem 0;
