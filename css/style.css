@@ -692,6 +692,10 @@ input::placeholder, textarea::placeholder {
         text-align: center;
     }
 
+    .contact .form input, .contact .form textarea {
+        max-width: 90%;
+    }
+
     .projects .project {
         flex-direction: column;
     }
