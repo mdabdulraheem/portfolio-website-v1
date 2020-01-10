@@ -27,6 +27,7 @@ body {
     width: 100%;
     position: fixed;
     z-index: 100;
+    background: linear-gradient(to right, #2d5dd4e7, #4f636be7);
     background-image: linear-gradient(to right, #2d5dd4e7, #4f636be7) ,url("../images/img_bg.jpg");
     background-size: cover;
     background-position: 50%;
@@ -42,6 +43,7 @@ body {
 }
 
 .navFixed {
+    background: linear-gradient(to right, #2d5dd4e7, #4f636be7);
     background-image: linear-gradient(to right, #2d5dd4e7, #4f636be7), url("../images/img_bg.jpg") !important;
     background-size: cover;
     background-position: 50%;
@@ -124,6 +126,7 @@ body {
 /* Header Styling */
 
 .header {
+    background: linear-gradient(to right, #2d5dd4e7, #4f636be7);
     background-image: linear-gradient(to right, #2d5dd4e7, #4f636be7) ,url("../images/img_bg.jpg");
     background-size: cover;
     background-position: 50%;
@@ -402,6 +405,7 @@ body {
 
 /* Testimonials styling */
 .testimonials {
+    background: linear-gradient(to right, #2d5dd4e7, #4f636be7);
     background-image: linear-gradient(to right, #2d5dd4e7, #4f636be7) ,url("../images/img_bg_main.jpg");
     background-size: cover;
     background-position: 50%;
@@ -510,6 +514,7 @@ body {
 
 /* Contact styling */
 .contact {
+    background: linear-gradient(to right, #2d5dd4e7, #4f636be7);
     background-image: linear-gradient(to right, #2d5dd4e7, #4f636be7) ,url("../images/img_bg_main.jpg");
     background-size: cover;
     background-position: 50%;
@@ -565,11 +570,12 @@ body {
 
 .contact .form {
     width: 360px;
+    max-width: 100%;
 }
 
 .contact .form input, .contact .form textarea {
     background: none;
-    max-width: 100%;
+    width: 100%;
     color: whitesmoke;
     padding: 0.8rem 1rem;
     border: 2px solid rgba(255, 255, 255, 0.7);
@@ -631,7 +637,7 @@ input::placeholder, textarea::placeholder {
 
 @media (max-width: 768px) {
     .nav {
-        background-image: linear-gradient(to right, #2d5dd4e7, #4f636be7);
+        background: linear-gradient(to right, #2d5dd4e7, #4f636be7);
     }
     .nav nav ul {
         display: none;
@@ -681,6 +687,9 @@ input::placeholder, textarea::placeholder {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .contact .form {
     }
 
     .contact .row .details {
