@@ -569,7 +569,7 @@ body {
 
 .contact .form input, .contact .form textarea {
     background: none;
-    width: 100%;
+    max-width: 100%;
     color: whitesmoke;
     padding: 0.8rem 1rem;
     border: 2px solid rgba(255, 255, 255, 0.7);
