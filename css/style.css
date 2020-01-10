@@ -27,6 +27,7 @@ body {
     width: 100%;
     position: fixed;
     z-index: 100;
+    background: linear-gradient(to right, #2d5dd4, #4f636b);
     background: linear-gradient(to right, #2d5dd4e7, #4f636be7);
     background-image: linear-gradient(to right, #2d5dd4e7, #4f636be7) ,url("../images/img_bg.jpg");
     background-size: cover;
@@ -43,6 +44,7 @@ body {
 }
 
 .navFixed {
+    background: linear-gradient(to right, #2d5dd4, #4f636b);
     background: linear-gradient(to right, #2d5dd4e7, #4f636be7);
     background-image: linear-gradient(to right, #2d5dd4e7, #4f636be7), url("../images/img_bg.jpg") !important;
     background-size: cover;
@@ -126,6 +128,7 @@ body {
 /* Header Styling */
 
 .header {
+    background: linear-gradient(to right, #2d5dd4, #4f636b);
     background: linear-gradient(to right, #2d5dd4e7, #4f636be7);
     background-image: linear-gradient(to right, #2d5dd4e7, #4f636be7) ,url("../images/img_bg.jpg");
     background-size: cover;
@@ -230,7 +233,8 @@ body {
     border-radius: 40px;
     font-size: 0.8rem;
     margin-top: 20px;
-    background: linear-gradient(to right,  #2d5dd4e7, #2d5dd4e7 );
+    background: linear-gradient(to right, #2d5dd4, #4f636b);
+    background: linear-gradient(to right, #2d5dd4e7, #4f636be7);
     color: whitesmoke;
     text-transform: uppercase;
     font-weight: bold;
@@ -405,6 +409,7 @@ body {
 
 /* Testimonials styling */
 .testimonials {
+    background: linear-gradient(to right, #2d5dd4, #4f636b);
     background: linear-gradient(to right, #2d5dd4e7, #4f636be7);
     background-image: linear-gradient(to right, #2d5dd4e7, #4f636be7) ,url("../images/img_bg_main.jpg");
     background-size: cover;
@@ -514,6 +519,8 @@ body {
 
 /* Contact styling */
 .contact {
+    background: linear-gradient(to right, #2d5dd4, #4f636b);
+    background-image: url("../images/img_bg_main.jpg");
     background: linear-gradient(to right, #2d5dd4e7, #4f636be7);
     background-image: linear-gradient(to right, #2d5dd4e7, #4f636be7) ,url("../images/img_bg_main.jpg");
     background-size: cover;
@@ -599,13 +606,13 @@ textarea {
     font-weight: bold;
     color: whitesmoke;
     background: linear-gradient(to right, #2d5dd4, #4f636b);
+    background: linear-gradient(to right, #2d5dd4e7, #4f636be7);
     opacity: 0.8;
     border: none;
     border-radius: 20px;
 }
 
 #submit:hover {
-    background: linear-gradient(to right, red, green);
     cursor: pointer;
     box-shadow: 0 1px 20px rgba(255,255,255,.2);
     opacity:1;
@@ -637,6 +644,7 @@ input::placeholder, textarea::placeholder {
 
 @media (max-width: 768px) {
     .nav {
+        background: linear-gradient(to right, #2d5dd4, #4f636b);
         background: linear-gradient(to right, #2d5dd4e7, #4f636be7);
     }
     .nav nav ul {
