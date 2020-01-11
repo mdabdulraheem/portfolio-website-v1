@@ -44,8 +44,8 @@ body {
 }
 
 .navFixed {
-    background: linear-gradient(to right, #2d5dd4, #4f636b);
-    background: linear-gradient(to right, #2d5dd4e7, #4f636be7);
+    background: linear-gradient(to right, #2d5dd4, #4f636b) !important;
+    background: linear-gradient(to right, #2d5dd4e7, #4f636be7) !important;
     background-image: linear-gradient(to right, #2d5dd4e7, #4f636be7), url("../images/img_bg.jpg") !important;
     background-size: cover;
     background-position: 50%;
