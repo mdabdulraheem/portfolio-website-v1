@@ -1,8 +1,8 @@
  // fixed nav background 
  const nav = document.querySelector(".nav");
- if( window.innerWidth > 768 ) {
+ //if( window.innerWidth > 768 ) {
      nav.style.background = "none";
- }
+ //}
  
  function check() {
      if( window.scrollY + document.querySelector(".nav").getBoundingClientRect().top > 0 ) {
