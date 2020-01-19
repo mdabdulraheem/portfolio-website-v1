@@ -33,3 +33,11 @@
  }
  menu_btn_close.addEventListener("click", menuClose);
  menu_btn_open.addEventListener("click", menuOpen);
+
+ //Preloader
+const preloaderEl = document.querySelector(".preloader");
+let preloader = () => {
+        preloaderEl.style.height = "0";
+}
+
+document.addEventListener("DOMContentLoaded", preloader, false);
