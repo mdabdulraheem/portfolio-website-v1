@@ -35,9 +35,15 @@
  menu_btn_open.addEventListener("click", menuOpen);
 
  //Preloader
-const preloaderEl = document.querySelector(".preloader");
+ const preloaderEl = document.querySelector(".preloader-wrapper");
+ preloaderEl.style.display = "block";
 let preloader = () => {
-        preloaderEl.style.height = "0";
+    preloaderEl.style.opacity = "0";
+    
+    setTimeout(function() {
+        preloaderEl.style.display = "none";
+    },1000);
+
 }
 
-document.addEventListener("DOMContentLoaded", preloader, false);
+window.addEventListener("load", preloader, false);

@@ -195,11 +195,11 @@ body {
 
 .social-links div a i {
     transition: 0.2s;
-    opacity: 0.6;
+    opacity: 0.5;
+    transition: 0.5s;
 }
 
 .social-links div a i:hover {
-    font-size: 2.2em;
     opacity: 1;
 }
 
@@ -639,16 +639,66 @@ input::placeholder, textarea::placeholder {
 /* Contact styling end */
 
 /* Preloader Styling */
-.preloader {
+.preloader-wrapper {
+    display: none;
     height: 100%;
     width: 100%;
     position: fixed;
     z-index: 1001;
-    background: rgba(0, 0, 0);
+    background: #ddd5d5;
     top: 0;
     left: 0;
     transition: 1s ease-out;
     overflow: hidden;
+}
+
+.preloader {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin: -75px 0 0 -75px;
+    border: 3px solid transparent;
+    border-radius: 50%;
+    border-top-color: #3498db;
+    animation: spin 2s linear infinite;
+}
+
+.preloader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    border: 3px solid transparent;
+    border-radius: 50%;
+    border-top-color: #e74c3c;
+    animation: spin 1.5s linear infinite;
+}
+
+.preloader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    bottom: 15px;
+    right: 15px;
+    border: 3px solid transparent;
+    border-radius: 50%;
+    border-top-color: #f9c922;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 /* Preloader styling end */
 
